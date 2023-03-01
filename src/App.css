@@ -29,4 +29,13 @@
   line-height: 0.5;
 }
 
+.sushi:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.sushi:active {
+  transform: scale(0.95);
+}
+
 
