@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [multiplier, setMultiplier] = useState(1);
 
-  function updateCount(){
+  const updateCount = () =>{
     setCount(count + multiplier);
   }
   return (
@@ -14,6 +14,24 @@ function App() {
         <h1>Sushi Selector</h1>
         <h2>Count: {count}</h2>
         <img onClick={updateCount} src="./sushi.webp" alt="" className="sushi" />
+      </div>
+
+      <div className="container">
+        <div className="upgrade">
+          <h3>Double Stuffed 👯‍♀️</h3>
+          <p>2x per click</p>
+          <button>10 samosas</button>
+        </div>
+        <div className="upgrade">
+          <h3>Party Pack 🎉</h3>
+          <p>5x per click</p>
+          <button>100 samosas</button>
+        </div>
+        <div className="upgrade">
+          <h3>Full Feast 👩🏽‍🍳</h3>
+          <p>10x per click</p>
+          <button>1000 samosas</button>
+        </div>
       </div>
     </div>
   )
